@@ -124,8 +124,8 @@
 			}
 			
 			.section .two_4 {
-				width: 70%;
-				height: 70%;
+				width: 80%;
+				height: 80%;
 				top: 0.7rem;
 				left: 50%;
 				margin-left: -1.5rem;
@@ -245,10 +245,10 @@
 			/*第四屏*/
 			
 			.section .four_1 {
-				width: 95%;
-				height: 95%;
-				top: -1rem;
-				left: 0;
+				width: 100%;
+				height: 100%;
+				top: -0.6rem;
+				left: -0.2rem;
 				-webkit-animation: all 1s linear;
 				/*过渡动画*/
 				-webkit-transform: skew(60deg, 10deg);
@@ -306,8 +306,6 @@
 				width: 100%;
 				bottom: -5rem;
 				z-index: 33;
-				-webkit-animation: all 1s linear;
-				/*-webkit-animation: bottom 1s linear;*/
 				-webkit-transition: all 1s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;
 			}
 			
@@ -317,7 +315,7 @@
 			
 			.section .five_2 {
 				width: 80%;
-				top: -2.5rem;
+				top: 0rem;
 				left: -5rem;
 				-webkit-animation: all 1s linear;
 				/*-webkit-transition: all 1s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;*/
@@ -333,50 +331,18 @@
 				left: -0.4rem;
 				z-index: 32;
 			}
-			/*	/*	/*	/*
-			第六屏
-			*/
-			/*.section .six_1{
-				width: 80%;
-				top: 0;
-				left:50%;
-				margin-left: -40%;
-				opacity: 0.1;
-				-webkit-animation: all 3s linear;
-				-webkit-animation: opacity 4s linear 1s;
-				
+			.section #top{
+				z-index: 66;
+				left: -50%;
+				width: 50%;
+				margin-left: -25%;
+				top: 3rem;
+				-webkit-transition: all 1s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;
+			}
+			.section.active #top {
+				left: 50%;
 			}
 			
-			.section.active .six_1{
-				opacity: 1;
-			}
-			
-			
-			.section .six_2{
-				width: 70%;
-				top: 0;
-				left:50%;
-				margin-left: -35%;
-				-webkit-animation: all 1s linear;/*过渡动画*/
-			/*-webkit-transform: rotate(-360deg);/*旋转角度*/
-			/*-webkit-transform-origin:1.4rem  2.6rem;*/
-			/*延迟调用动画*/
-			/*-webkit-transition: -webkit-transform 2s;*/
-			/*}*/
-			/*.section.active .six_2{
-				-webkit-transform: rotate(0deg);/*旋转角度*/
-		}
-		/*.section .six_3{
-				width: 2rem;
-				bottom:-2rem ;
-				left:50%;
-				margin-left: -1rem;
-				-webkit-animation: all 1s linear;/*过渡动画*/
-		/*-webkit-transition: all 1s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;
-			}*/
-		/*.section.active .six_3{
-				bottom: 0.2rem;
-			}*/
 		</style>
 
 	</head>
@@ -385,7 +351,7 @@
 		<div class="music">
 			<img id="musicImg" src="img/music.svg" />
 			<audio id="mp3" style="display: none;" controls autoplay="autoplay">
-				<source src="img/MP3/Richard Clayderman - 梦中的婚礼.mp3" type="audio/ogg">
+				<source src="img/MP3/Drive My Car_20170729204501.mp3" type="audio/ogg">
 			</audio>
 		</div>
 
@@ -400,7 +366,7 @@
 				<span id="tp">
 				好好学习
 			</span>
-				<img class="two_4" src="img/tu/two_3.jpeg" />
+				<img class="two_4" src="img/goddess/psb (14).jpg" />
 				<img class="two_1" src="img/tu/two_0.png" />
 				<img class="two_2" src="img/tu/two_1.png" />
 				<img class="two_3" src="img/tu/two_2.png" />
@@ -409,26 +375,24 @@
 			</span>
 			</div>
 			<div class="section">
-				<img class="three_1" src="img/tu/three_0.jpeg" />
+				<img class="three_1" src="img/goddess/psb (13).jpg" />
 				<img class="three_2" src="img/tu/three_1.png" />
 				<img class="three_3" src="img/tu/three_2.png" />
 			</div>
 			<div class="section">
-				<img class="four_1" src="img/tu/four_0.jpeg" />
+				<img class="four_1" src="img/goddess/mmexport1500610615650.jpg" />
 				<img class="four_2" src="img/tu/four_1.png" />
 				<img class="four_3" src="img/tu/four_2.png" />
 				<img class="four_4" src="img/tu/four_3.png" />
 			</div>
 			<div class="section">
 				<img class="five_1" src="img/tu/five_0.png" />
-				<img class="five_2" src="img/tu/five_1.jpeg" />
+				<img class="five_2" src="img/goddess/psb (1).jpg" />
 				<img class="five_3" src="img/tu/five_2.png" />
+				<span id="top">
+					小心让人抱走了哦！！！
+				</span>
 			</div>
-			<!--<div class="section">
-			<img class="six_2" src="img/tu/six_0.jpeg"/>
-			<img class="six_1" src="img/tu/six_2.png"/>
-			<img class="six_3" src="img/tu/six_1.png"/>
-		</div>-->
 		</div>
 
 		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
