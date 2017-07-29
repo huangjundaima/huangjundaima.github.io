@@ -183,16 +183,24 @@ $(document).ready(function() {
 	var lIS = $(".teacher_bot ul li ");
 	var liW = $(".teacher_bot ul li").width();
 	var liS = $(".teacher_bot ul li").length;
+	console.log(liS);
 	//ul的宽度
 	uLs.css("width",liS*(liW+20)+"px");
-	console.log(liS*(liW+20));
+//	console.log(liS*(liW+20));
+	var i = 0;
+	var l = setInterval(function(){
+		max();
+	},3000)
 	
-	uLs.animate({
-		left:-1200+"px"
-	},1000,'linear',function(){
-		
-	})
-
+	
+	function max(){
+		i = (index)%(liS/4);
+//		console.log(index);
+			uLs.animate({
+			left:-1200*i+"px"
+		},100,'linear')
+	}
+	
 
 
 //作品切换
