@@ -15,7 +15,6 @@
 				font-size: 0.16rem;
 				position: relative;
 			}
-			/*第一屏*/
 			
 			#full-page {
 				width: 100vw;
@@ -59,7 +58,6 @@
 				width: 3rem;
 				margin-left: -1.5rem;
 				-webkit-transition: all 1s linear;
-				/*-webkit-transition: all 1s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;*/
 			}
 			
 			.section.active .bg_1 {
@@ -73,7 +71,6 @@
 				width: 3rem;
 				margin-right: -1.5rem;
 				-webkit-transition: all 1s linear;
-				/*-webkit-transition: all 1s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;*/
 			}
 			
 			.section.active .bg_2 {
@@ -86,7 +83,6 @@
 				left: 0rem;
 				top: 30%;
 				-webkit-transition: all 1s linear;
-				/*-webkit-transition: all 1s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;*/
 			}
 			
 			.section.active .bg_3 {
@@ -107,7 +103,6 @@
 			.section.active .bg_4 {
 				opacity: 1;
 			}
-			/*第二屏*/
 			
 			.section .two_1 {
 				top: 0;
@@ -130,14 +125,10 @@
 				left: 50%;
 				margin-left: -1.5rem;
 				-webkit-animation: all 1s linear;
-				/*过渡动画*/
 				-webkit-transform: rotate(-180deg);
-				/*旋转角度*/
 				-webkit-transform-origin: 1.4rem 2.6rem;
-				/*延迟调用动画*/
 				-webkit-transition: -webkit-transform 2s;
 				opacity: 0.2;
-				/*显示的明显度*/
 			}
 			
 			.section.active .two_4 {
@@ -151,7 +142,6 @@
 				width: 1.5rem;
 				-webkit-transition: all 1s linear;
 				-webkit-transition: all 1s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;
-				/*-webkit-animation: all 1s linear;*/
 			}
 			
 			.section.active .two_2 {
@@ -164,7 +154,6 @@
 				width: 1rem;
 				-webkit-transition: all 1s linear;
 				-webkit-transition: all 1s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;
-				/*-webkit-animation: all 1s linear;*/
 			}
 			
 			.section.active .two_3 {
@@ -198,7 +187,6 @@
 			.section.active #bm {
 				bottom: 0.3rem;
 			}
-			/*第三屏*/
 			
 			.section .three_1 {
 				top: 0;
@@ -242,7 +230,6 @@
 				left: 0.4rem;
 				bottom: 0.5rem;
 			}
-			/*第四屏*/
 			
 			.section .four_1 {
 				width: 95%;
@@ -250,17 +237,13 @@
 				top: -1rem;
 				left: 0;
 				-webkit-animation: all 1s linear;
-				/*过渡动画*/
 				-webkit-transform: skew(60deg, 10deg);
-				/*旋转角度*/
 				-webkit-transform-origin: 3rem 3rem;
-				/*延迟调用动画*/
 				-webkit-transition: -webkit-transform 2s;
 			}
 			
 			.section.active .four_1 {
 				-webkit-transform: skew(0deg, 0deg);
-				/*旋转角度*/
 			}
 			
 			.section .four_2 {
@@ -269,7 +252,6 @@
 				top: 0;
 				left: 0;
 				-webkit-animation: all 1s linear;
-				/*过渡动画*/
 				opacity: 0.2;
 			}
 			
@@ -300,14 +282,12 @@
 			.section.active .four_3 {
 				right: 0;
 			}
-			/*第五屏*/
 			
 			.section .five_1 {
 				width: 100%;
 				bottom: -5rem;
 				z-index: 33;
 				-webkit-animation: all 1s linear;
-				/*-webkit-animation: bottom 1s linear;*/
 				-webkit-transition: all 1s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;
 			}
 			
@@ -320,7 +300,6 @@
 				top: -2.5rem;
 				left: -5rem;
 				-webkit-animation: all 1s linear;
-				/*-webkit-transition: all 1s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;*/
 			}
 			
 			.section.active .five_2 {
@@ -333,50 +312,6 @@
 				left: -0.4rem;
 				z-index: 32;
 			}
-			/*	/*	/*	/*
-			第六屏
-			*/
-			/*.section .six_1{
-				width: 80%;
-				top: 0;
-				left:50%;
-				margin-left: -40%;
-				opacity: 0.1;
-				-webkit-animation: all 3s linear;
-				-webkit-animation: opacity 4s linear 1s;
-				
-			}
-			
-			.section.active .six_1{
-				opacity: 1;
-			}
-			
-			
-			.section .six_2{
-				width: 70%;
-				top: 0;
-				left:50%;
-				margin-left: -35%;
-				-webkit-animation: all 1s linear;/*过渡动画*/
-			/*-webkit-transform: rotate(-360deg);/*旋转角度*/
-			/*-webkit-transform-origin:1.4rem  2.6rem;*/
-			/*延迟调用动画*/
-			/*-webkit-transition: -webkit-transform 2s;*/
-			/*}*/
-			/*.section.active .six_2{
-				-webkit-transform: rotate(0deg);/*旋转角度*/
-		}
-		/*.section .six_3{
-				width: 2rem;
-				bottom:-2rem ;
-				left:50%;
-				margin-left: -1rem;
-				-webkit-animation: all 1s linear;/*过渡动画*/
-		/*-webkit-transition: all 1s cubic-bezier(0.79, 0.03, 0.22, 1.53) 1s;
-			}*/
-		/*.section.active .six_3{
-				bottom: 0.2rem;
-			}*/
 		</style>
 
 	</head>
@@ -384,8 +319,8 @@
 	<body>
 		<div class="music">
 			<img id="musicImg" src="img/music.svg" />
-			<audio id="mp3" style="display: none;" controls autoplay="autoplay">
-				<source src="img/MP3/Richard Clayderman - 梦中的婚礼.mp3" type="audio/ogg">
+			<audio id="mp3" style="display: none;" controls autoplay="autoplay" loop="loop" preload="preload">
+				<source src="img/MP3/Drive My Car_20170729204501.mp3" type="audio/ogg">
 			</audio>
 		</div>
 
@@ -424,11 +359,6 @@
 				<img class="five_2" src="img/tu/five_1.jpeg" />
 				<img class="five_3" src="img/tu/five_2.png" />
 			</div>
-			<!--<div class="section">
-			<img class="six_2" src="img/tu/six_0.jpeg"/>
-			<img class="six_1" src="img/tu/six_2.png"/>
-			<img class="six_3" src="img/tu/six_1.png"/>
-		</div>-->
 		</div>
 
 		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
@@ -437,14 +367,14 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$("#full-page").fullpage({
-					verticalCentered: true, //内容是否居中
+					verticalCentered: true,
 					sectionsColor: ["white", "white", "white", "white", "white", "white"], //背景色
-					anchors: ["p1", "p2", "p3", "p4"], //描点
-					scrollingSpeed: 700, //切换的速度
-					navigation: true, // 导航
-					navigationPosition: "right", //导航的位置
-					//navigationTooltips: //导航提示文字
-					continuousVertical: true, // 循环切换，不回弹
+					anchors: ["p1", "p2", "p3", "p4"], 
+					scrollingSpeed: 700, 
+					navigation: true, 
+					navigationPosition: "right", 
+					//navigationTooltips: 
+					continuousVertical: true,
 					css3: true,
 
 					afterLoad: function(anchorLink, index) {
@@ -461,22 +391,6 @@
 					},
 				});
 
-				//var music = $(".music");
-				//var musicImg = $(".music img")
-				//var mp3 = $("#mp3");
-				//mp3.get(0).play();
-				//musicImg.click(function(){
-				//mp3.get(0).pause();
-				//musicImg.css("webkitAnimationPlayState","paused");
-				//if(mp3.pause ==true){
-				//mp3.get(0).play();
-				//musicImg.css("webkitAnimationPlayState","paused");
-				//			
-				//}else{
-				//mp3.get(0).play();
-				//musicImg.css("webkitAnimationPlayState","running");
-				////				}
-				//			});
 			});
 			var music = document.getElementsByClassName("music")[0];
 			var musicImg = document.getElementById("musicImg");

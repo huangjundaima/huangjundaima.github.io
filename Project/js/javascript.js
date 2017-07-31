@@ -183,7 +183,6 @@ $(document).ready(function() {
 	var lIS = $(".teacher_bot ul li ");
 	var liW = $(".teacher_bot ul li").width();
 	var liS = $(".teacher_bot ul li").length;
-	console.log(liS);
 	//ul的宽度
 	uLs.css("width",liS*(liW+20)+"px");
 //	console.log(liS*(liW+20));
@@ -192,13 +191,22 @@ $(document).ready(function() {
 		max();
 	},3000)
 	
+	uLs.hover(function(){
+		clearInterval(l);
+	},function(){
+		l = setInterval(function(){
+		max();
+	},3000)
+	})
+	
+	
 	
 	function max(){
 		i = (index)%(liS/4);
 //		console.log(index);
 			uLs.animate({
 			left:-1200*i+"px"
-		},100,'linear')
+		},200,'linear')
 	}
 	
 

@@ -1088,6 +1088,7 @@ li{
 
 .honor .trophy ul li:hover{
 	border: 1px solid darkgray;
+	text-shadow: 5px 5px 6px blue;
 }
 
 .honor .trophy ul li:last-child{
